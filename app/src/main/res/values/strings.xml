@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project Word Finding</string>
+    <string name="Enter_Word">Enter Word</string>
+    <string name="search_image_button_desc">ImageButton for searching purpose</string>
+    <string name="Wordssimilarmeaning"> FindOut Related Words</string>
+    <string name="Search">Search</string>
+</resources>

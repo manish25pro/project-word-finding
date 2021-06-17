@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/Wordssimilarmeaning"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_word_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Enter_Word" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:textColor="@color/white"
+        android:text="@string/Search"
+        android:background="@color/purple_700"
+        android:id="@+id/search_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_input_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/search_image_button_desc" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/search_image_button"
+        android:id="@+id/word_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+    <ProgressBar
+
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
